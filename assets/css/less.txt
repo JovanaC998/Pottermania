@@ -1,0 +1,1308 @@
+!-- style.css --!
+
+@boja1: #FFD700;
+@boja2: black;
+@boja3: #fff;
+@boja4: #bebebe;
+@boja5: #ECF5EF;
+@boja6: #3B4255;
+@pozadinskaboja1: #FFD700;
+@pozadinskaboja2: #3B4255;
+@pozadinskaboja3: #eee;
+@pozadinskaboja4: #ECF5EF;
+@pozadinskaboja5: #9CBACD;
+
+@font-face {
+	font-family: 'Harry Potter';
+	src: url('http://www.fontsaddict.com/fontface/harry-potter.TTF');
+}
+* {
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	overflow-x: hidden;
+}
+#omot {
+	width: 100%;
+	height: auto;
+	margin: 0px auto;
+	justify-content: space-around;
+	align-items: center;
+}
+#pozadina {
+	background: url("../images/pozadina1.jpg");
+	background-repeat: no-repeat;
+	width: 100%;
+	background-size: cover;
+	background-position: center;
+	margin: 0px auto;
+	min-height: 950px;
+}
+#logo {
+	margin: 10px 80px 0px;
+	float: left;
+}
+.topnav {
+	overflow: hidden;
+	.icon {
+		display: none;
+		width: auto;
+	}
+}
+#meni {
+	ul {
+		.flexmeni {
+			display: none;
+		}
+		margin: 0px auto;
+		padding-top: 75px;
+		li {
+			a {
+				color: @boja1;
+				text-decoration: none;
+				font-variant: small-caps;
+				font-weight: bold;
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+	float: left;
+	li {
+		display: inline;
+		text-align: center;
+		padding-right: 50px;
+		padding-left: 50px;
+		font-size: 25px;
+	}
+	.aktivanLink {
+		border-top: 2px solid #FFD700;
+		padding-top: 10px;
+	}
+}
+#pretraga {
+	float: right;
+	margin: 70px 100px 0px;
+}
+#tbPretraga {
+	padding: 10px;
+	font-size: 15px;
+	color: @boja2;
+	border: 1px solid #FFD700;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+#tbDugme {
+	font-size: 16px;
+	padding: 10px;
+	margin-left: -5px;
+	background-color: @pozadinskaboja1;
+	border: 1px solid #FFD700;
+	color: @boja3;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	&:hover {
+		background-color: @pozadinskaboja2;
+		color: @boja1;
+	}
+}
+.cleaner {
+	clear: both;
+}
+#more {
+	width: 70%;
+	height: auto;
+	text-align: center;
+	background-color: @pozadinskaboja3;
+	background: rgba(255, 255, 255, 0.15);
+	margin: 0px auto;
+	border-radius: 25px;
+}
+#informacije {
+	padding-left: 1%;
+	padding-right: 1%;
+}
+.info {
+	text-align: center;
+	font-size: 19px;
+	font-weight: bold;
+	padding-top: 10px;
+	color: @boja4;
+}
+.podaci {
+	font-size: 27px;
+	font-style: italic;
+	font-weight: bold;
+	padding-top: 10px;
+	color: @boja5;
+}
+#naslov {
+	text-align: center;
+	font-size: 50px;
+	color: @boja1;
+	font-style: italic;
+}
+main {
+	background-color: @pozadinskaboja4;
+	border-radius: 20px;
+	margin: 10px 0px;
+}
+#parts {
+	width: 100%;
+	padding: 20px 0px;
+	vertical-align: top;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+#delovi {
+	text-align: center;
+	font-size: 40px;
+	color: @boja6;
+	font-style: italic;
+}
+.slika {
+	img {
+		border-radius: 20px;
+		margin: 0px auto;
+		&:hover {
+			border: 3px solid #FFD700;
+			width: 194px;
+		}
+	}
+}
+.part {
+	font-size: 18.5px;
+	font-variant: small-caps;
+	font-weight: bold;
+	text-align: center;
+	color: @boja6;
+}
+footer {
+	width: 100%;
+	margin: 0px auto;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: @pozadinskaboja5;
+}
+#autor {
+	float: left;
+	width: 38%;
+	margin-left: 10%;
+	a {
+		color: @boja6;
+		font-size: 24px;
+		text-decoration: underline;
+	}
+}
+#naslovFuter {
+	font-size: 24px;
+	font-variant: small-caps;
+	font-style: italic;
+	color: @boja6;
+	a {
+		&:hover {
+			color: @boja5;
+		}
+	}
+}
+#meniFuter {
+	padding-right: 100px;
+	padding-top: 30px;
+	width: 25%;
+	padding-left: 16%;
+	ul {
+		list-style-type: none;
+		width: 120px;
+		li {
+			font-size: 21px;
+			text-align: left;
+			padding-bottom: 11px;
+			a {
+				text-decoration: none;
+				color: @boja6;
+				font-variant: small-caps;
+				&:hover {
+					color: @boja5;
+				}
+			}
+		}
+	}
+	.aktivanLink {
+		font-weight: 900;
+	}
+}
+#social {
+	width: 63%;
+	ul {
+		list-style-type: none;
+		display: flex;
+		margin-right: 5%;
+	}
+	li {
+		padding: 10px;
+		a {
+			font-size: 40px;
+			text-decoration: none;
+			color: @boja6;
+			&:hover {
+				color: @boja5;
+			}
+		}
+	}
+}
+
+
+
+!-- hogwarts.css --!
+
+@boja1: #FFD700;
+@boja2: black;
+@boja3: #fff;
+@boja4: #3B4255;
+@boja5: #ECF5EF;
+@pozadinskaboja1: #FFD700;
+@pozadinskaboja2: #fff;
+@pozadinskaboja3: #ECF5EF;
+@pozadinskaboja4: #9CBACD;
+
+@font-face {
+	font-family: 'Harry Potter';
+	src: url('http://www.fontsaddict.com/fontface/harry-potter.TTF');
+}
+* {
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	overflow-x: hidden;
+}
+.cleaner {
+	clear: both;
+	clear: both;
+}
+#omot {
+	width: 100%;
+	height: auto;
+	margin: 0px auto;
+	justify-content: space-around;
+	align-items: center;
+}
+#pozadina {
+	background: url("../images/pozadina1.jpg");
+	background-repeat: no-repeat;
+	width: 100%;
+	background-size: cover;
+	background-position: center;
+	margin: 0px auto;
+	height: 950px;
+}
+#logo {
+	margin: 10px 100px 0px;
+	float: left;
+}
+.topnav {
+	overflow: hidden;
+	.icon {
+		display: none;
+		width: auto;
+	}
+}
+#meni {
+	ul {
+		.flexmeni {
+			display: none;
+		}
+		margin: 0px auto;
+		padding-top: 75px;
+		li {
+			a {
+				color: @boja1;
+				text-decoration: none;
+				font-variant: small-caps;
+				font-weight: bold;
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+	float: left;
+	li {
+		display: inline;
+		text-align: center;
+		padding-right: 50px;
+		padding-left: 50px;
+		font-size: 25px;
+	}
+	.aktivanLink {
+		border-top: 2px solid #FFD700;
+		padding-top: 10px;
+	}
+}
+#pretraga {
+	float: right;
+	margin: 65px 100px 0px;
+}
+#tbPretraga {
+	padding: 10px;
+	font-size: 15px;
+	color: @boja2;
+	border: 1px solid #FFD700;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+#tbDugme {
+	font-size: 15px;
+	padding: 10px;
+	margin-left: -5px;
+	background-color: @pozadinskaboja1;
+	border: 1px solid #FFD700;
+	color: @boja3;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	text-align: center;
+	&:hover {
+		background-color: @pozadinskaboja2;
+		color: @boja1;
+	}
+}
+#prebaci {
+	width: 240px;
+	border-radius: 10px;
+	border: 2px solid #FFD700;
+	margin: 200px 0px 0 860px;
+}
+#dugmes {
+	text-decoration: none;
+	color: @boja1;
+	font-size: 35px;
+	text-align: center;
+	padding-top: 20px;
+	font-variant: small-caps;
+}
+#fact {
+	background-color: @pozadinskaboja3;
+	display: inline-block;
+	border-radius: 20px;
+	margin: 10px 0px;
+}
+#artiklL {
+	width: 25%;
+	text-align: center;
+	font-size: 20px;
+	float: left;
+	margin-top: 50px;
+	h3 {
+		font-style: italic;
+		font-size: 25px;
+		color: @boja4;
+	}
+	p {
+		font-variant: small-caps;
+		color: @boja2;
+		padding-top: 20px;
+	}
+}
+#slika {
+	border-radius: 20px;
+	width: 700px;
+	display: inline-block;
+	margin-left: 110px;
+	img {
+		width: 700px;
+		border-radius: 20px;
+		margin-top: 50px;
+		-webkit-transition: all 2.5s ease;
+		-moz-transition: all 2.5s ease;
+		-ms-transition: all 2.5s ease;
+		transition: all 2.5s ease;
+	}
+	&:hover {
+		img {
+			-webkit-transform: scale(1.25);
+			-moz-transform: scale(1.25);
+			-ms-transform: scale(1.25);
+			-o-transform: scale(1.25);
+			transform: scale(1.25);
+		}
+	}
+}
+#artiklD {
+	width: 25%;
+	text-align: center;
+	font-size: 20px;
+	float: right;
+	margin-top: 50px;
+	display: inline-block;
+	h3 {
+		font-style: italic;
+		font-size: 25px;
+		color: @boja4;
+		margin-bottom: 20px;
+	}
+}
+#kuca {
+	width: 100%;
+	th {
+		font-size: 25px;
+		font-variant: small-caps;
+		text-align: center;
+	}
+	td {
+		font-size: 22px;
+		text-align: center;
+	}
+}
+footer {
+	width: 100%;
+	margin: 0px auto;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: @pozadinskaboja4;
+}
+#autor {
+	float: left;
+	width: 38%;
+	margin-left: 10%;
+	a {
+		color: @boja4;
+		font-size: 24px;
+		text-decoration: underline;
+	}
+}
+#naslovFuter {
+	font-size: 24px;
+	font-variant: small-caps;
+	font-style: italic;
+	color: @boja4;
+	a {
+		&:hover {
+			color: @boja5;
+		}
+	}
+}
+#meniFuter {
+	padding-right: 100px;
+	padding-top: 30px;
+	width: 25%;
+	padding-left: 16%;
+	ul {
+		list-style-type: none;
+		width: 147px;
+		li {
+			font-size: 21px;
+			text-align: left;
+			padding-bottom: 11px;
+			a {
+				text-decoration: none;
+				color: @boja4;
+				font-variant: small-caps;
+				&:hover {
+					color: @boja5;
+				}
+			}
+		}
+	}
+	.aktivanLink {
+		font-weight: 900;
+	}
+}
+#social {
+	width: 63%;
+	ul {
+		list-style-type: none;
+		display: flex;
+	}
+	li {
+		padding: 10px;
+		a {
+			font-size: 40px;
+			text-decoration: none;
+			color: @boja4;
+			&:hover {
+				color: @boja5;
+			}
+		}
+	}
+}
+
+!-- gallery.css --!
+
+@boja1: #FFD700;
+@boja2: black;
+@boja3: #fff;
+@boja4: #3B4255;
+@boja5: #ECF5EF;
+@pozadinskaboja1: #FFD700;
+@pozadinskaboja2: #fff;
+@pozadinskaboja3: #ECF5EF;
+@pozadinskaboja4: #9CBACD;
+
+@font-face {
+	font-family: 'Harry Potter';
+	src: url('http://www.fontsaddict.com/fontface/harry-potter.TTF');
+}
+* {
+	margin: 0px;
+	padding: 0px;
+}
+#omot {
+	width: 100%;
+	height: auto;
+	margin: 0px auto;
+	justify-content: space-around;
+	align-items: center;
+}
+#pozadina {
+	background: url("../images/pozadina1.jpg");
+	background-repeat: no-repeat;
+	width: 100%;
+	background-size: cover;
+	background-position: center;
+	margin: 0px auto;
+	height: 950px;
+}
+#logo {
+	margin: 10px 100px 0px;
+	float: left;
+}
+.topnav {
+	overflow: hidden;
+	.icon {
+		display: none;
+		width: auto;
+	}
+}
+#meni {
+	ul {
+		.flexmeni {
+			display: none;
+		}
+		margin: 0px auto;
+		padding-top: 75px;
+		li {
+			a {
+				color: @boja1;
+				text-decoration: none;
+				font-variant: small-caps;
+				font-weight: bold;
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+	float: left;
+	li {
+		display: inline;
+		text-align: center;
+		padding-right: 50px;
+		padding-left: 50px;
+		font-size: 25px;
+	}
+	.aktivanLink {
+		border-top: 2px solid #FFD700;
+		padding-top: 10px;
+	}
+}
+#pretraga {
+	float: right;
+	margin: 65px 100px 0px;
+}
+#tbPretraga {
+	padding: 10px;
+	font-size: 15px;
+	color: @boja2;
+	border: 1px solid #FFD700;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+#tbDugme {
+	font-size: 15px;
+	padding: 10px;
+	margin-left: -5px;
+	background-color: @pozadinskaboja1;
+	border: 1px solid #FFD700;
+	color: @boja3;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	text-align: center;
+	&:hover {
+		background-color: @pozadinskaboja2;
+		color: @boja1;
+	}
+}
+.cleaner {
+	clear: both;
+}
+#prebaci {
+	width: 210px;
+	border-radius: 10px;
+	border: 2px solid #FFD700;
+	margin: 200px 0 0 860px;
+}
+#dugmes {
+	text-decoration: none;
+	color: @boja1;
+	font-size: 38px;
+	text-align: center;
+	padding-top: 20px;
+	font-variant: small-caps;
+}
+main {
+	background-color: @pozadinskaboja3;
+	border-radius: 20px;
+	margin: 10px 0px;
+}
+h1 {
+	text-align: center;
+	font-size: 50px;
+	font-style: italic;
+	padding: 10px;
+	text-decoration: underline;
+	color: @boja4;
+}
+#naslov {
+	width: 300px;
+	background-color: @pozadinskaboja4;
+	margin: 0px auto;
+	border: 3px solid #3B4255;
+	border-radius: 10px;
+}
+#gornji {
+	width: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	img {
+		-webkit-transition: all 1s ease;
+		-moz-transition: all 1s ease;
+		-ms-transition: all 1s ease;
+		transition: all 1s ease;
+	}
+	&:hover {
+		img {
+			-webkit-transform: scale(1.03);
+			-moz-transform: scale(1.03);
+			-ms-transform: scale(1.03);
+			-o-transform: scale(1.03);
+			transform: scale(1.03);
+		}
+	}
+}
+.redG {
+	width: 450px;
+	border-radius: 20px;
+	padding: 10px;
+}
+#donji {
+	width: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	img {
+		-webkit-transition: all 1s ease;
+		-moz-transition: all 1s ease;
+		-ms-transition: all 1s ease;
+		transition: all 1s ease;
+	}
+	&:hover {
+		img {
+			-webkit-transform: scale(1.03);
+			-moz-transform: scale(1.03);
+			-ms-transform: scale(1.03);
+			-o-transform: scale(1.03);
+			transform: scale(1.03);
+		}
+	}
+}
+footer {
+	width: 100%;
+	margin: 0px auto;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: @pozadinskaboja4;
+}
+#autor {
+	float: left;
+	width: 38%;
+	margin-left: 10%;
+	a {
+		color: @boja4;
+		font-size: 24px;
+		text-decoration: underline;
+	}
+}
+#naslovFuter {
+	font-size: 24px;
+	font-variant: small-caps;
+	font-style: italic;
+	color: @boja4;
+	a {
+		&:hover {
+			color: @boja5;
+		}
+	}
+}
+#meniFuter {
+	padding-right: 100px;
+	padding-top: 30px;
+	width: 25%;
+	padding-left: 16%;
+	ul {
+		list-style-type: none;
+		width: 147px;
+		li {
+			font-size: 21px;
+			text-align: left;
+			padding-bottom: 11px;
+			a {
+				text-decoration: none;
+				color: @boja4;
+				font-variant: small-caps;
+				&:hover {
+					color: @boja5;
+				}
+			}
+		}
+	}
+	.aktivanLink {
+		font-weight: 900;
+	}
+}
+#social {
+	width: 63%;
+	ul {
+		list-style-type: none;
+		display: flex;
+	}
+	li {
+		padding: 10px;
+		a {
+			font-size: 40px;
+			text-decoration: none;
+			color: @boja4;
+			&:hover {
+				color: @boja5;
+			}
+		}
+	}
+}
+
+!-- contact.css --!
+
+@boja1: #FFD700;
+@boja2: black;
+@boja3: #fff;
+@boja4: #3B4255;
+@boja5: #ECF5EF;
+@pozadinskaboja1: #FFD700;
+@pozadinskaboja2: #fff;
+@pozadinskaboja3: #ECF5EF;
+@pozadinskaboja4: #9CBACD;
+
+@font-face {
+	font-family: 'Harry Potter';
+	src: url('http://www.fontsaddict.com/fontface/harry-potter.TTF');
+}
+* {
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	overflow-x: hidden;
+}
+#omot {
+	width: 100%;
+	height: auto;
+	margin: 0px auto;
+	justify-content: space-around;
+	align-items: center;
+}
+#pozadina {
+	background: url("../images/pozadina1.jpg");
+	background-repeat: no-repeat;
+	width: 100%;
+	background-size: cover;
+	background-position: center;
+	margin: 0px auto;
+	height: 950px;
+}
+#logo {
+	margin: 10px 100px 0px;
+	float: left;
+}
+.topnav {
+	overflow: hidden;
+	.icon {
+		display: none;
+		width: auto;
+	}
+}
+#meni {
+	ul {
+		.flexmeni {
+			display: none;
+		}
+		margin: 0px auto;
+		padding-top: 75px;
+		li {
+			a {
+				color: @boja1;
+				text-decoration: none;
+				font-variant: small-caps;
+				font-weight: bold;
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+	float: left;
+	li {
+		display: inline;
+		text-align: center;
+		padding-right: 50px;
+		padding-left: 50px;
+		font-size: 25px;
+	}
+	.aktivanLink {
+		border-top: 2px solid #FFD700;
+		padding-top: 10px;
+	}
+}
+#pretraga {
+	float: right;
+	margin: 65px 100px 0px;
+}
+#tbPretraga {
+	padding: 10px;
+	font-size: 15px;
+	color: @boja2;
+	border: 1px solid #FFD700;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+#tbDugme {
+	font-size: 15px;
+	padding: 10px;
+	margin-left: -5px;
+	background-color: @pozadinskaboja1;
+	border: 1px solid #FFD700;
+	color: @boja3;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	text-align: center;
+	&:hover {
+		background-color: @pozadinskaboja2;
+		color: @boja1;
+	}
+}
+.cleaner {
+	clear: both;
+}
+#prebaci {
+	width: 190px;
+	border-radius: 10px;
+	border: 2px solid #FFD700;
+	margin: 200px 0 0 860px;
+}
+#dugmes {
+	text-decoration: none;
+	color: @boja1;
+	font-size: 38px;
+	text-align: center;
+	padding-top: 20px;
+	font-variant: small-caps;
+}
+main {
+	background-color: @pozadinskaboja3;
+	border-radius: 20px;
+	margin: 40px 0px;
+	width: 100%;
+}
+h1 {
+	text-align: center;
+	font-size: 50px;
+	font-style: italic;
+	padding-bottom: 10px;
+	text-decoration: underline;
+	color: @boja4;
+}
+h2 {
+	text-align: center;
+	font-style: italic;
+	font-size: 30px;
+	color: @boja4;
+}
+#naslov {
+	width: 99%;
+	background-color: @pozadinskaboja4;
+	margin: 40px auto;
+	border: 3px solid #3B4255;
+	border-radius: 10px;
+	margin: 0% auto;
+}
+#poruka {
+	width: 33%;
+	height: auto;
+	float: left;
+}
+.polja {
+	width: 90%;
+	height: 40px;
+	margin: 2% 0% 0% 7%;
+	border-radius: 5px;
+	font-size: 20px;
+}
+#polje {
+	margin: 0 0 0 7%;
+	border-radius: 5px;
+	max-width: 90%;
+}
+#dugme {
+	width: 54%;
+	background-color: @pozadinskaboja4;
+	text-align: center;
+	border-radius: 10px;
+	border: 3px solid #3B4255;
+	height: 40px;
+	margin: 0 0 0 25%;
+	font-size: 20px;
+	margin-bottom: 10px;
+	&:hover {
+		color: @boja4;
+		background-color: @pozadinskaboja3;
+	}
+}
+#logovanje {
+	width: 33%;
+	float: left;
+}
+#registracija {
+	width: 33%;
+	float: left;
+}
+footer {
+	width: 100%;
+	margin: 0px auto;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: @pozadinskaboja4;
+}
+#autor {
+	float: left;
+	width: 38%;
+	margin-left: 10%;
+	a {
+		color: @boja4;
+		font-size: 24px;
+		text-decoration: underline;
+	}
+}
+#naslovFuter {
+	font-size: 24px;
+	font-variant: small-caps;
+	font-style: italic;
+	color: @boja4;
+	a {
+		&:hover {
+			color: @boja5;
+		}
+	}
+}
+#meniFuter {
+	padding-right: 100px;
+	padding-top: 30px;
+	width: 25%;
+	padding-left: 16%;
+	ul {
+		list-style-type: none;
+		width: 147px;
+		li {
+			font-size: 21px;
+			text-align: left;
+			padding-bottom: 11px;
+			a {
+				text-decoration: none;
+				color: @boja4;
+				font-variant: small-caps;
+				&:hover {
+					color: @boja5;
+				}
+			}
+		}
+	}
+	.aktivanLink {
+		font-weight: 900;
+	}
+}
+#social {
+	width: 63%;
+	ul {
+		list-style-type: none;
+		display: flex;
+	}
+	li {
+		padding: 10px;
+		a {
+			font-size: 40px;
+			text-decoration: none;
+			color: @boja4;
+			&:hover {
+				color: @boja5;
+			}
+		}
+	}
+}
+
+!-- about.css --!
+
+@boja1: #FFD700;
+@boja2: black;
+@boja3: #fff;
+@boja4: #3B4255;
+@boja5: #ECF5EF;
+@pozadinskaboja1: #FFD700;
+@pozadinskaboja2: #fff;
+@pozadinskaboja3: #ECF5EF;
+@pozadinskaboja4: #9CBACD;
+
+@font-face {
+	font-family: 'Harry Potter';
+	src: url('http://www.fontsaddict.com/fontface/harry-potter.TTF');
+}
+* {
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	overflow-x: hidden;
+}
+#omot {
+	width: 100%;
+	height: auto;
+	margin: 0px auto;
+	justify-content: space-around;
+	align-items: center;
+}
+#pozadina {
+	background: url("../images/pozadina1.jpg");
+	background-repeat: no-repeat;
+	width: 100%;
+	background-size: cover;
+	background-position: center;
+	margin: 0px auto;
+	height: 950px;
+}
+#logo {
+	margin: 10px 100px 0px;
+	float: left;
+}
+.topnav {
+	overflow: hidden;
+	.icon {
+		display: none;
+		width: auto;
+	}
+}
+#meni {
+	ul {
+		.flexmeni {
+			display: none;
+		}
+		margin: 0px auto;
+		padding-top: 75px;
+		li {
+			a {
+				color: @boja1;
+				text-decoration: none;
+				font-variant: small-caps;
+				font-weight: bold;
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+	float: left;
+	li {
+		display: inline;
+		text-align: center;
+		padding-right: 50px;
+		padding-left: 50px;
+		font-size: 25px;
+	}
+	.aktivanLink {
+		border-top: 2px solid #FFD700;
+		padding-top: 10px;
+	}
+}
+#pretraga {
+	float: right;
+	margin: 65px 100px 0px;
+}
+#tbPretraga {
+	padding: 10px;
+	font-size: 15px;
+	color: @boja2;
+	border: 1px solid #FFD700;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+#tbDugme {
+	font-size: 15px;
+	padding: 10px;
+	margin-left: -5px;
+	background-color: @pozadinskaboja1;
+	border: 1px solid #FFD700;
+	color: @boja3;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	text-align: center;
+	&:hover {
+		background-color: @pozadinskaboja2;
+		color: @boja1;
+	}
+}
+.cleaner {
+	clear: both;
+}
+#prebaci {
+	width: 160px;
+	border-radius: 10px;
+	border: 2px solid #FFD700;
+	margin: 200px 0 0 860px;
+}
+#dugmes {
+	text-decoration: none;
+	color: @boja1;
+	font-size: 38px;
+	text-align: center;
+	padding-top: 20px;
+	font-variant: small-caps;
+}
+#author {
+	width: 100%;
+	min-height: 600px;
+	background-color: @pozadinskaboja3;
+	border-radius: 20px;
+	margin: 10px 0px;
+}
+#levo {
+	width: 40%;
+	padding: 15px;
+	margin: 0px auto;
+	float: left;
+	img {
+		width: 450px;
+		border-radius: 170px;
+		&:hover {
+			border: 3px solid #FFD700;
+			width: 445px;
+		}
+	}
+}
+#desno {
+	width: 57%;
+	height: auto;
+	margin-top: 10%;
+	float: right;
+	h1 {
+		font-size: 50px;
+		text-align: center;
+		font-weight: bold;
+		font-variant: small-caps;
+		text-decoration: underline;
+		color: @boja4;
+	}
+	p {
+		text-align: center;
+		font-size: 26px;
+		padding-top: 60px;
+		color: @boja4;
+	}
+}
+footer {
+	width: 100%;
+	margin: 0px auto;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: @pozadinskaboja4;
+}
+#autor {
+	float: left;
+	width: 38%;
+	margin-left: 10%;
+	a {
+		color: @boja4;
+		font-size: 24px;
+		text-decoration: underline;
+	}
+}
+#naslovFuter {
+	font-size: 24px;
+	font-variant: small-caps;
+	font-style: italic;
+	color: @boja4;
+	a {
+		&:hover {
+			color: @boja5;
+		}
+	}
+}
+#meniFuter {
+	padding-right: 100px;
+	padding-top: 30px;
+	width: 25%;
+	padding-left: 16%;
+	ul {
+		list-style-type: none;
+		width: 147px;
+		li {
+			font-size: 21px;
+			text-align: left;
+			padding-bottom: 11px;
+			a {
+				text-decoration: none;
+				color: @boja4;
+				font-variant: small-caps;
+				&:hover {
+					color: @boja5;
+				}
+			}
+		}
+	}
+	.aktivanLink {
+		font-weight: 900;
+	}
+}
+#social {
+	width: 63%;
+	ul {
+		list-style-type: none;
+		display: flex;
+	}
+	li {
+		padding: 10px;
+		a {
+			font-size: 40px;
+			text-decoration: none;
+			color: @boja4;
+			&:hover {
+				color: @boja5;
+			}
+		}
+	}
+}
+

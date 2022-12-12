@@ -1,0 +1,334 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+@font-face {
+  font-family: 'Harry Potter';
+  src: url('http://www.fontsaddict.com/fontface/harry-potter.TTF');
+}
+
+body{
+	overflow-x:hidden;
+}
+#omot{
+	width:100%;
+	height:auto;
+	margin: 0px auto;
+	justify-content:space-around;
+	align-items: center;
+}
+
+#pozadina {
+	background:url("../images/pozadina1.jpg");
+	background-repeat: no-repeat;
+	width: 100%;
+	background-size: cover;
+	background-position: center;
+	margin: 0px auto;
+	height: 950px;
+}
+
+#logo {
+	margin: 10px 100px 0px;
+	float: left;
+}
+.topnav {
+    overflow: hidden;
+}
+.topnav .icon {
+    display: none;
+		width: auto;
+}
+#meni ul .flexmeni {
+	display: none;
+}
+#meni {
+	float: left;
+}
+
+#meni ul {
+	margin: 0px auto;
+	padding-top: 75px;
+}
+
+#meni li {
+	display: inline;
+	text-align: center;
+	padding-right: 50px;
+	padding-left: 50px;
+	font-size: 25px;
+}
+
+#meni ul li a {
+	color: #FFD700;
+	text-decoration: none;
+	font-variant: small-caps;
+	font-weight: bold;
+}
+
+#meni ul li a:hover {
+	text-decoration: underline;
+}
+
+#meni .aktivanLink {
+	border-top: 2px solid #FFD700;
+	padding-top: 10px;
+}
+
+#pretraga {
+	float: right;
+	margin: 65px 100px 0px;
+}
+
+#tbPretraga{
+	padding: 10px;
+	font-size: 15px;
+	color: black;
+	border: 1px solid #FFD700;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+#tbDugme{
+	font-size: 15px;
+	padding: 10px;
+	margin-left: -5px;
+	background-color:#FFD700;
+	border: 1px solid #FFD700;
+	color: #fff;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	text-align:center;
+}
+#tbDugme:hover{
+	background-color: #fff;
+	color: #FFD700;
+}
+
+.cleaner {
+	clear: both;
+}
+
+#prebaci {
+	width: 190px;
+	border-radius: 10px;
+	border: 2px solid #FFD700;
+	margin: 200px 0 0 860px;
+}
+
+#dugmes {
+	text-decoration: none;
+	color: #FFD700;
+	font-size: 38px;
+	text-align: center;
+	padding-top: 20px;
+	font-variant: small-caps;
+}
+
+main {
+	background-color: #ECF5EF;
+	border-radius: 20px;
+	margin: 40px 0px;
+	width: 100%;
+}
+
+h1 {
+	text-align: center;
+	font-size: 45px;
+  word-spacing: 5px;
+  letter-spacing: 1px;
+	font-style: italic;
+	padding-bottom: 10px;
+	text-decoration: underline;
+	color: #3B4255;
+}
+
+h2 {
+	text-align: center;
+	font-style: italic;
+	font-size: 30px;
+	color: #3B4255;
+}
+
+#naslov {
+	width: 99%;
+	background-color: #9CBACD;
+	margin: 40px auto;
+	border: 3px solid #3B4255;
+	border-radius: 10px;
+	margin: 0% auto;
+}
+
+#poruka {
+	width: 33%;
+	height: auto;
+	float: left;
+}
+
+.form-div {
+	width: 33%;
+	height: auto;
+	float: left;
+}
+
+.write-text {
+	margin: 0 0 0 7%;
+	border-radius: 5px;
+	width: 91%;
+}
+
+.polja {
+	width: 90%;
+	height: 40px;
+	margin: 2% 0% 0% 7%;
+	border-radius: 5px;
+	font-size: 20px;
+}
+
+#polje {
+	margin: 0 0 0 7%;
+	border-radius: 5px;
+	max-width: 90%;
+}
+
+.dugme {
+	width: 54%;
+	background-color: #9CBACD;
+	text-align: center;
+	border-radius: 10px;
+	border: 3px solid #3B4255;
+	height: 40px;
+	margin: 0 0 0 25%;
+	font-size: 20px;
+	margin-bottom: 10px;
+	font-variant: small-caps;
+}
+
+.dugme:hover {
+	color: #3B4255;
+	background-color: #ECF5EF;
+}
+
+#logovanje {
+	width: 33%;
+	float: left;
+}
+
+#registracija {
+	width: 33%;
+	float: left;
+}
+
+footer {
+	width:100%;
+	margin: 0px auto;
+	display: flex;
+	justify-content:space-around;
+	align-items: center;
+	background-color: #9CBACD;
+}
+
+#autor {
+	float: left;
+	width: 38%;
+	margin-left: 10%;
+}
+
+#autor a{
+	color: #3B4255;
+	font-size: 24px;
+	text-decoration: underline;
+}
+
+#naslovFuter {
+	font-size: 24px;
+	font-variant: small-caps;
+	font-style: italic;
+	color: #3B4255;
+}
+
+#naslovFuter a:hover {
+	color: #ECF5EF;
+}
+
+#meniFuter {
+	padding-right: 100px;
+	padding-top: 30px;
+	width: 25%;
+	padding-left: 16%;
+}
+
+#meniFuter ul {
+	list-style-type: none;
+	width: 147px;
+}
+
+#meniFuter ul li {
+	font-size: 21px;
+	text-align: left;
+	padding-bottom: 11px;
+}
+
+#meniFuter ul li a {
+	text-decoration: none;
+	color: #3B4255;
+	font-variant: small-caps;
+}
+
+#meniFuter ul li a:hover {
+	color: #ECF5EF;
+}
+#social {
+	width: 63%;
+}
+#social ul {
+	list-style-type:none;
+	display:flex;
+}
+#social li {
+	padding:10px;
+}
+
+#social li a {
+	font-size:40px;
+	text-decoration: none;
+	color: #3B4255;
+}
+
+#social li a:hover {
+	color:	#ECF5EF;
+}
+
+#meniFuter .aktivanLink {
+	font-weight: 900;
+}
+
+.show-validated{
+	padding: 2% 20%;
+	text-align: center;
+	font-size: 18px;
+	font-variant: small-caps;
+	list-style-type: none;
+}
+
+.show-validated ul {
+	list-style: none;
+}
+
+.show-validated ul li {
+	padding: 2px;
+	border-bottom: 2px dotted black;
+	font-variant: small-caps;
+}
+
+.houses-select {
+	width: 40%;
+    background-color: #9CBACD;
+    text-align: center;
+    padding: 5px;
+	margin: 2% 0% 0% 33%;
+	font-size: 20px;
+	border-radius: 10px;
+    border: 3px solid #3B4255;
+    font-variant: small-caps;
+}

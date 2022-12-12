@@ -1,0 +1,320 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+@font-face {
+  font-family: 'Harry Potter';
+  src: url('http://www.fontsaddict.com/fontface/harry-potter.TTF');
+}
+body{
+	overflow-x:hidden;
+}
+#omot{
+	width:100%;
+	height:auto;
+	margin: 0px auto;
+	justify-content:space-around;
+	align-items: center;
+}
+
+#pozadina {
+	background:url("../images/pozadina1.jpg");
+	background-repeat: no-repeat;
+	width: 100%;
+	background-size: cover;
+	background-position: center;
+	margin: 0px auto;
+	min-height: 950px;
+}
+#logo {
+	margin: 10px 80px 0px;
+	float: left;
+}
+.topnav {
+    overflow: hidden;
+}
+.topnav .icon {
+    display: none;
+		width: auto;
+}
+
+#meni {
+	float: left;
+}
+#meni ul {
+	margin: 0px auto;
+	padding-top: 75px;
+}
+
+#meni li {
+	display: inline;
+	text-align: center;
+	padding-right: 50px;
+	padding-left:50px;
+	font-size: 25px;
+}
+
+#meni ul li a {
+	color: #FFD700;
+	text-decoration: none;
+	font-variant: small-caps;
+	font-weight: bold;
+}
+
+#meni ul li a:hover {
+	text-decoration: underline;
+}
+
+#meni .aktivanLink {
+	border-top: 2px solid #FFD700;
+	padding-top: 10px;
+}
+
+#pretraga {
+	float: right;
+	margin: 70px 100px 0px;
+}
+
+#tbPretraga{
+	padding: 10px;
+	font-size: 15px;
+	color: black;
+	border: 1px solid #FFD700;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+#tbDugme{
+	font-size: 16px;
+	padding: 10px;
+	margin-left: -5px;
+	background-color:#FFD700;
+	border: 1px solid #FFD700;
+	color: #fff;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+#tbDugme:hover{
+	background-color: #3B4255;
+	color: #FFD700;
+}
+
+.cleaner {
+	clear: both;
+}
+
+#more {
+	width: 70%;
+	height: auto;
+	text-align: center;
+	background-color: #eee;
+	background: rgba(255, 255, 255, 0.15);
+	margin: 0px auto;
+	border-radius: 25px;
+
+}
+#informacije {
+	padding-left: 1%;
+	padding-right: 1%;
+}
+.info {
+	text-align: center;
+	font-size: 19px;
+	font-weight: bold;
+	padding-top: 10px;
+	color: #bebebe;
+}
+
+.podaci {
+	font-size: 27px;
+	font-style: italic;
+	font-weight: bold;
+	padding-top: 10px;
+	color: #ECF5EF;
+}
+
+#naslov {
+	text-align: center;
+	font-size: 50px;
+	color: #FFD700;
+	font-style: italic;
+}
+
+main {
+	background-color: #ECF5EF;
+	border-radius: 20px;
+	margin: 10px 0px;
+}
+
+#parts {
+	width: 100%;
+	padding: 20px 0px;
+	vertical-align: top;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+#delovi {
+	text-align: center;
+	font-size: 40px;
+	color: #3B4255;
+	font-style: italic;
+}
+
+.slika img{
+	border-radius: 20px;
+	margin: 0px auto;
+
+}
+
+.slika img:hover {
+	border: 3px solid #FFD700;
+	width: 194px;
+}
+
+.part {
+	font-size: 18.5px;
+	font-variant: small-caps;
+	font-weight: bold;
+	text-align: center;
+	color: #3B4255;
+}
+
+footer {
+	width:100%;
+	margin: 0px auto;
+	display: flex;
+	justify-content:space-around;
+	align-items: center;
+	background-color: #9CBACD;
+}
+
+#autor {
+	float: left;
+	width: 38%;
+	margin-left: 10%;
+}
+
+#autor a{
+	color: #3B4255;
+	font-size: 24px;
+	text-decoration: underline;
+}
+
+#naslovFuter {
+	font-size: 24px;
+	font-variant: small-caps;
+	font-style: italic;
+	color: #3B4255;
+}
+
+#naslovFuter a:hover {
+	color: #ECF5EF;
+}
+
+#meniFuter {
+	padding-right: 100px;
+	padding-top: 30px;
+	width: 25%;
+	padding-left: 16%;
+}
+
+#meniFuter ul {
+	list-style-type: none;
+	width: 120px;
+}
+
+#meniFuter ul li {
+	font-size: 21px;
+	text-align: left;
+	padding-bottom: 11px;
+}
+
+#meniFuter ul li a {
+	text-decoration: none;
+	color: #3B4255;
+	font-variant: small-caps;
+}
+
+#meniFuter ul li a:hover {
+	color: #ECF5EF;
+}
+#social{
+	width: 63%;
+}
+#social ul {
+	list-style-type:none;
+	display:flex;
+	margin-right: 5%;
+}
+#social li {
+	padding:10px;
+}
+
+#social li a {
+	font-size:40px;
+	text-decoration: none;
+	color: #3B4255;
+}
+
+#social li a:hover {
+	color:	#ECF5EF;
+}
+
+#meniFuter .aktivanLink {
+	font-weight: 900;
+}
+
+.questionMovie {
+	width: 100%;
+	padding: 2.5% 0;
+}
+
+.bestMovies {
+	width: 50%;
+	padding: 0 25%;
+}
+.bestMovies ul{
+	list-style-type: none;
+}
+
+.bestMovies ul li {
+	padding: 3px 0;
+	font-size: 25px;
+	font-variant: small-caps;
+}
+
+.bestMovies input[type=checkbox] {
+	transform: scale(1.5);
+	margin-right: 5px;
+  }
+
+.movieVote {
+	width: 50%;
+	display: block;
+	float: left;
+	font-size: 25px;
+	font-variant: small-caps;
+}
+
+.dugme {
+	width: 30%;
+	background-color: #9CBACD;
+	text-align: center;
+	border-radius: 10px;
+	border: 3px solid #3B4255;
+	height: 40px;
+	font-size: 20px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+.dugme:hover {
+	color: #3B4255;
+	background-color: #ECF5EF;
+}
+
+.moviesList {
+	padding-left: 5px;
+}
